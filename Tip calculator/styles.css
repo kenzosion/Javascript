@@ -7,9 +7,9 @@ body {
 }
 
 #container {
-    width: 400px;
-    margin: 40px auto 0;
-    padding: 50px;
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 60px;
     box-sizing: border-box;
     background: url('img/paper-pattern.jpg') top left repeat;
     box-shadow: 0 10px 15px -8px #000;
@@ -20,8 +20,8 @@ body {
 }
 
 h1 {
-    margin: 0 0 20px;
-    padding: 0 0 20px;
+    margin: 0 0 40px;
+    padding: 0 0 240px;
     border-bottom: solid 1px #ddd;
 }
 
@@ -42,7 +42,7 @@ form select {
 }
 
 form input[type="text"] {
-    width: 90px;
+    width: 100px;
 }
 
 button {
