@@ -1,0 +1,9 @@
+//
+
+it('displays an album image', ()=>{
+  const wrapper = shallow(<Album />)
+  
+  expect(wrapper.containsMatchingElement(
+    <img src="album.jpg" />)
+    ).toBe(true)
+})
