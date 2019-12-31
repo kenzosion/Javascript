@@ -1,0 +1,28 @@
+fetch('https://devcamper.io/api/v1/bootcamps/34343')
+  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) {
+       throw new Error(res.error);
+    }
+    return res;
+  })
+  .catch(err => console.log(err));
+  
+  
+  
+  
+  // or
+  
+  
+  
+  function handleErrors(res) {
+  if (!res.ok) throw new Error(res.error);
+  return res;
+}
+ 
+fetch('https://devcamper.io/api/v1/bootcamps/34343')
+  .then(res => res.json())
+  .then(handleErrors)
+  .then(res => console.log(res.data))
+  .catch(err => console.log(err));
+ 
